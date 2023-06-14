@@ -1,0 +1,31 @@
+$deActiveColor: rgb(174, 174, 176);
+$activeColor: black;
+
+$activeBgColor: rgb(227, 227, 230);
+$hoverBgColor: rgb(236, 236, 238);
+$basic_white_quarternary: rgba(255, 255, 255, 0.18);
+
+$listImgSize: 35px;
+
+@mixin square($sideLen) {
+    width: $sideLen;
+    height: $sideLen;
+}
+@mixin circle($radius) {
+    width: $radius;
+    height: $radius;
+    border-radius: 50%;
+}
+@mixin flexCenter($dir) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin fontSW($size, $weight) {
+    font: {
+        size: $size;
+        weight: $weight;
+    }
+}
